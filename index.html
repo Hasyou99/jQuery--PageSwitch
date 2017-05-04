@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery分页插件</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div id="container" data-PageSwitch>
+        <div class="sections">
+            <div class="section" id="section0">
+                <h3>This is the Page</h3>
+            </div>
+            <div class="section" id="section1">
+                <h3>This is the Page</h3>
+            </div>
+            <div class="section" id="section2">
+                <h3>This is the Page</h3>
+            </div>
+            <div class="section" id="section3">
+                <h3>This is the Page</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/page.js"></script>
+    <script>
+        $("#container").PageSwitch({
+            direction: "horizontal",
+        })
+    </script>
+</body>
+
+</html>

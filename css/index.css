@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#container,
+.sections,
+.section {
+    height: 100%;
+    width: 100%;
+}
+
+.sections {
+    position: absolute;
+}
+
+#section0,
+#section1,
+#section2,
+#section3 {
+    background-color: #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#section0 {
+    background-image: url(image/02.jpg)
+}
+
+#section1 {
+    background-image: url(image/03.jpg)
+}
+
+#section2 {
+    background-image: url(image/05.jpg)
+}
+
+#section3 {
+    background-image: url(image/07.jpg)
+}
+
+.pages {
+    position: fixed;
+    list-style: none;
+}
+
+.vertical.pages {
+    right: 15px;
+    top: 50%;
+}
+
+.horizontal.pages {
+    left: 50%;
+    bottom: 15px;
+}
+
+.pages li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.horizontal.pages li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pages li.active {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fffe00;
+    margin: 10px 0px 10px 5px;
+    background: none;
+    margin-left: 0;
+}
